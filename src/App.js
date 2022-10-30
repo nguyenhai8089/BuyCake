@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 /* import logo from './logo.svg'; */
 import './App.css';
-import Main from "./components/MainComponent";
+import Counter from "./components/counter";
 import{BrowserRouter} from 'react-router-dom';
 import{Provider} from 'react-redux';
-import{ConfigureStore}from './redux/configureStore';
+import{ConfigureStore}from './redux/store';
 
 const store=ConfigureStore();
 
@@ -15,7 +15,7 @@ class App extends Component {
       <Provider store={store}>
         <BrowserRouter>
             <div className="App">        
-              <Main/>      
+              <Counter/>      
             </div>       
         </BrowserRouter>
       </Provider>     
